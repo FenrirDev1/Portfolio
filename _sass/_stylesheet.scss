@@ -1,0 +1,152 @@
+
+
+$Title-Color: #63f7ef;
+$Page-BG1: #131313 ;
+$Page-BG2: #22172e ;
+
+$Primary-Text-Color: #4695b9;
+
+$H-Font: Yu Gothic;
+$B-Font: Yu Gothic;
+
+$B-Size: 20;
+
+
+
+:hover
+{
+    color: white;
+}
+
+
+
+
+.wrapper {
+  font-family: $B-Font;
+  font-size: $B-Size;
+  line-height: 1.5;
+  color: $Primary-Text-Color;
+  background-image: repeating-linear-gradient($Page-BG1, $Page-BG2);
+}
+.post{
+    font-family: $B-Font;
+    font-size: $B-Size;
+    line-height: 1.5;
+    margin-inline: 50px;
+    color: #4695b9;
+    text-shadow: 2px 2px #131313;
+    background-color: #1b1b1b;
+    div{
+        background-color: #353535;
+    }
+}
+
+
+a
+{
+    color:$Primary-Text-Color;
+    text-shadow: 2px 2px #131313;
+}
+
+h1{
+    font-family: $H-Font;
+    text-shadow: 2px 2px #131313;
+}
+
+h2{
+    font-family: $H-Font;
+    text-shadow: 2px 2px #131313;
+}
+
+h3{
+    font-family: $H-Font;
+    text-shadow: 2px 2px #131313;
+}
+
+h4{
+    font-family: $H-Font;
+    text-shadow: 2px 2px #131313;
+}
+
+h5{
+    font-family: $H-Font;
+    text-shadow: 2px 2px #131313;
+}
+
+h6{
+    font-family: $H-Font;
+    text-shadow: 2px 2px #131313;
+}
+
+
+.page{
+    font-family: $B-Font;
+    font-size: $B-Size;
+    margin-inline: 50px;
+    padding: 10px;
+    color: #5746b9;
+    text-shadow: 2px 2px #131313;
+    background-image: linear-gradient(#1b0e30, #1b1b1b);
+    justify-items: center;
+    p{
+        text-align: center;
+    }
+    iframe{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+header
+{
+    .flexbox
+    {
+        img
+        {
+            max-height: 130px;
+        }
+        max-height: 130px;
+        display: flex;
+        justify-content:left;
+        margin: 0px;
+        align-items: center;
+        background-image: url(/assets/img/HeaderBanner.png);
+        background-size: 100%;
+
+        .navlist{
+            
+            ul{
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                font-family: $H-Font;
+                font-size: xx-large;
+                font-weight: bold;
+            }
+            li{
+                a{
+                    border-radius: 10px;
+                    padding: 16px;
+                    display: block;
+                    text-align: center;
+                    text-shadow: 2px 2px #131313;
+                    text-decoration: none;
+                }
+                a:hover{
+                    transition-duration: 0.3s;
+                    display: block;
+                    background-color: #1d1d1db9;
+                    text-shadow: 2px 2px #131313;
+                    text-align: center;
+                    text-decoration: none;
+                }
+                float: left;
+            }
+            
+        }
+    }
+
+    hr{
+        border: 5px solid #131313;
+    }
+}

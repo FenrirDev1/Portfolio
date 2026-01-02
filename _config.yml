@@ -34,6 +34,8 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
 
+sass:
+  style: compact # possible values: nested expanded compact compressed
 
 defaults: 
   -

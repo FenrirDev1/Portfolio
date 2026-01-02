@@ -1,18 +1,30 @@
 ---
-layout: page
+layout: "page"
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+**Hi I'm Adam, Aka Fenrir Dev!**
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<img src="assets/img/about.jpg" alt="Me" width="400"/>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+***
+
+I am a proggrammer who loves Devil May Cry, Yakuza, Zenless Zone Zero and the likes. I also love Dungeons and Dragons, drawing and trying my hand at whatever crosses my path.
+
+***
+
+Heres a drawing of Pyke from League of Legends by me.
 
 
-[jekyll-organization]: https://github.com/jekyll
+<img src="assets/img/Pyke.png" alt="Drawing Of Pyke by me" width="1000">
+
+***
+
+And heres me trying my hand at video editing
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/oTKCPNEg1VM?si=ucOnqj8CMMhO1fMV" title="Showcase of Editing" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+Thank you for checking out my Portfolio and about me I hope you have a great day!

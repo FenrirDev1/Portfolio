@@ -1,10 +1,18 @@
+---
+sass: stylesheet
+---
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>{{site.title}}</title>
+        <link rel="stylesheet" href="{{'/assets/css/main.css'}}"/>
+        
     </head>
-    <body>
-        {% include header.html color="blue" %}
+    <body class="wrapper">
+        {% include header.html color="#63f7ef" %}
         {{content}}
+        {% include footer.html %}
     </body>
+    
 </html>

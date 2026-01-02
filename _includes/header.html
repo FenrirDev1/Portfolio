@@ -1,3 +1,27 @@
-<h1 style="color: {{include.color}}">{{site.title}}</h1>
-<img src="/assets/img/Banner.png" alt="Banner.png">
-<hr><br>
+<header>
+    <div class="flexbox">
+        <h1>
+            <a href="/">
+                <img src="/assets/img/Watermark.png" alt="Logo" style="background-color: rgba(0, 0, 0, 0.733);margin: 10; padding: 20px; border-radius: 100px;">
+            </a>
+        </h1>
+        <h2>
+            <img flex src="/assets/img/Banner.png" alt="Banner.png" >
+        </h2>
+        <nav class="navlist">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                {% for page in site.pages %}
+                {% if page.title %}
+                <li>
+                    <a href="{{page.url}}">{{page.title}}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    <hr><br>
+</header>
