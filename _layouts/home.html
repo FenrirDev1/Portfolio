@@ -1,0 +1,21 @@
+---
+layout: wrapper
+---
+
+{% for person in site.data.people %}
+    {{person.name }}, {{person.job }} <br>
+{% endfor %}
+
+
+{% for file in site.static_files %}
+    {% if file.image %}
+        {{file.path}}
+        <img src="{{file.path}}" alt="{file.name}">
+    {% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
+    <li><a style="{% if page.url == post.url %}color:red;{% endif %}" href="{{ post.url}}">{{post.title}}</a></li>
+{% endfor %}
+
+{{content}}
