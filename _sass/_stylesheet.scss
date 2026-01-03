@@ -1,8 +1,8 @@
 
 
 $Title-Color: #63f7ef;
-$Page-BG1: #131313 ;
-$Page-BG2: #22172e ;
+//$Page-BG1: #131313 ;
+//$Page-BG2: #22172e ;
 
 $Primary-Text-Color: #4695b9;
 
@@ -33,11 +33,15 @@ li{
 //Wrapper
 //------------------------------------------------------------------------------------
 .wrapper {
+    margin: 0%;
   font-family: $B-Font;
   font-size: $B-Size;
   line-height: 1.5;
   color: $Primary-Text-Color;
-  background-image: repeating-linear-gradient($Page-BG1, $Page-BG2);
+  background-size: cover;
+  background-image: url(/assets/img/Fortuna.gif);
+  background-size:  cover;
+  //background-image: repeating-linear-gradient($Page-BG1, $Page-BG2);
 }
 
 //a and h's
@@ -132,14 +136,26 @@ h6{
 .page{
     font-family: $B-Font;
     font-size: $B-Size;
-    margin-inline: 50px;
+    margin-inline: 20%;
     padding: 10px;
+    padding-bottom: 30px;
     color: #5746b9;
     text-shadow: 2px 2px #131313;
-    background-image: linear-gradient(#1b0e30, #1b1b1b);
+    background-image: linear-gradient(#1b0e30e1, #1b1b1bec);
     justify-items: center;
-    p{
+    p,h1,h2,h3,h4,h5,h6,a{
+        color: #5746b9;
         text-align: center;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    hr{
+        width: 100%;
+    }
+    .titleHr{
+        width: 20%;
     }
     iframe{
         display: block;
@@ -153,6 +169,14 @@ footer{
     width: 100%;
     bottom: 0%;
     background-color: $Secondary-Color;
+    hr{
+        border-color: $Tertiary-Color;
+        border-style: solid;
+        border-width: 2;
+        margin: 0%;
+        
+    }
+    
    
 }
 //Header
@@ -172,12 +196,13 @@ header
         align-items: center;
         background-image: url(/assets/img/HeaderBanner.png);
         background-size: 100%;
-
+        width: 100%;
+        
         .navlist{
             
             ul{
                 list-style-type: none;
-                padding: 0;
+                padding: 0px;
                 overflow: hidden;
                 font-family: $H-Font;
                 font-size: xx-large;
@@ -207,12 +232,13 @@ header
     }
 
     hr{
+        margin: 0%;
         border: 5px solid #131313;
     }
 }
 //Post
 //------------------------------------------------------------------------------------
-$PostMargin: 10;
+$PostMargin: 40;
 .post{
     //Defaults
     font-family: $B-Font;
@@ -222,14 +248,21 @@ $PostMargin: 10;
     color: $Primary-Text-Color;
     text-shadow: 2px 2px #131313;
 
-    background-color: $Secondary-Color;
+    background-color: #1b1b1bec;
     border-style: solid;
     border-width: 5;
     border-radius: 5px;
     border-color: $Tertiary-Color;
-
     //H
     .titleh2{
+        margin-left: 10;
+        margin-top: auto;
+        padding-top: 10;
+        padding-bottom: 0;
+        justify-content: left;
+        margin-bottom: auto;
+    }
+    h3,h4,h5,h6{
         margin-top: auto;
         margin-left: $PostMargin;
         padding-top: 10;
@@ -247,10 +280,53 @@ $PostMargin: 10;
     p{
         margin-left: $PostMargin;
     }
-    //Div
-    div{
-        background-color: #353535;
+    .titlearea{
+        background-color: $Tertiary-Color;
     }
 
+}
+//Portfolio (post)
+//------------------------------------------------------------------------------------
+.portfolio{
+}
 
+.content{
+    column-count: 2;
+    flex:auto;
+}
+.textarea{
+    justify-items: left;
+}
+.videoarea{
+    justify-items: right;
+    align-items: stretch;
+    iframe{
+        display:flex;
+        justify-self: right;
+        margin-right: 10px;
+    }
+}
+.quickinfo{
+    margin-left: $PostMargin;
+    justify-content: center;
+    width: 100%;
+    
+}
+.infosheet{
+    margin-top: 10px;
+    background-color: #131313;
+    border-color: #292929;
+    width: 100%;
+    h4{
+        margin-left: 5px;
+    }
+    th{
+        display: flex;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    td{
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
 }

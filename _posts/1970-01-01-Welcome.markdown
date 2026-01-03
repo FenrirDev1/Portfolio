@@ -1,5 +1,21 @@
 ---
 layout: "post"
 permalink: "/"
-show: true
+title: Home
+show: false
+simple: true
 ---
+
+
+### Welcome to my (FenrirDev's) Portfolio!
+
+To look at my showcased work look through the posts dropdown in the top right.
+
+To learn more about me have a look through about.
+
+To access links to my Youtube, LinkedIn or Github look into links!
+
+Hope you enjoy your stay :)
+
+
+<img src="assets/img/Deej.png" alt="deej" width="200">

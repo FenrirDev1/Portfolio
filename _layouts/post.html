@@ -2,9 +2,41 @@
 layout: "home"
 ---
 
-<div class="post">
-    <h2 class="titleh2"> {{page.title}}</h2>
-    <hr>
-    {{content}}
-    <br>
-</div>
+<!-- If simple do a simple post -->
+{% if page.simple == true %}
+    <div class="post">
+        <div class ="titleArea">
+            <h2 class="titleh2"> {{page.title}}</h2>
+            <hr>
+        </div>
+        {{content}}
+        <br>
+    </div>
+<!-- else do a Portfolio Post -->
+{% else %}
+    <div class="post portfolio">
+        <div class ="titlearea">
+            <h2 class="titleh2"> {{page.title}}</h2>
+            <hr>
+        </div>
+        <!---Content area-->
+        <div class="content">
+
+            {% assign pagedata = site.data.portfolioInfo[page.yamlName] %}
+
+            <div class="textarea">
+                <div class="quickinfo">
+                    {% include infosheet.html pagedata=pagedata %}
+                    <br>
+                </div>
+                <div class="slowinfo">
+                    {{content}}
+                </div>
+            </div>
+            <div class="videoarea">
+                <iframe width="560" height="315" src="{{pagedata.videolink}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br>
+    </div>
+{% endif %}

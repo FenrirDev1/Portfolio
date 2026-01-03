@@ -1,0 +1,15 @@
+
+<div class="infosheet">
+    <h4>Stats</h4>
+    <hr>
+    <table>
+        {% for data in {{include.pagedata}} %}
+        {% unless {{data[0]}} == "videolink" %}
+        <tr>
+            <th>{{data[0]}}</th>
+            <td>{{data[1]}}</td>
+        </tr>
+        {% endunless %}
+        {%endfor%}
+    </table>
+</div>

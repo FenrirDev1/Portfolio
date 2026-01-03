@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mouse Variable Display
-permalink: /MVD
-yamlName: MVD
+title: Low Level Optimisation
+permalink: /LLO
+yamlName: LLO
 show: true
 ---
 
