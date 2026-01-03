@@ -22,6 +22,16 @@
                 {% endfor %}
             </ul>
         </nav>
+        <div class="dropdown">
+            <button class="dropdownbutton"><b>Posts</b></button>
+            <div class="dropdownposts">
+                {% for page in site.posts reversed %}
+                {% if page.show == true %}
+                <a href="{{page.url}}">{{page.title}}</a>
+                {% endif  %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
     <hr><br>
 </header>

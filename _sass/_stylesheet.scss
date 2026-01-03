@@ -6,21 +6,32 @@ $Page-BG2: #22172e ;
 
 $Primary-Text-Color: #4695b9;
 
+$Primary-Color: #4695b9;
+$Secondary-Color: #1b1b1b;
+$Tertiary-Color: #353535;
+
 $H-Font: Yu Gothic;
 $B-Font: Yu Gothic;
 
 $B-Size: 20;
 
+$Transition-Speed: 0.3s;
 
-
+//Hover
+//------------------------------------------------------------------------------------
 :hover
 {
     color: white;
 }
+//li
+//------------------------------------------------------------------------------------
+li{
+    margin-left: 30px;
+    list-style: none;
+}
 
-
-
-
+//Wrapper
+//------------------------------------------------------------------------------------
 .wrapper {
   font-family: $B-Font;
   font-size: $B-Size;
@@ -28,20 +39,9 @@ $B-Size: 20;
   color: $Primary-Text-Color;
   background-image: repeating-linear-gradient($Page-BG1, $Page-BG2);
 }
-.post{
-    font-family: $B-Font;
-    font-size: $B-Size;
-    line-height: 1.5;
-    margin-inline: 50px;
-    color: #4695b9;
-    text-shadow: 2px 2px #131313;
-    background-color: #1b1b1b;
-    div{
-        background-color: #353535;
-    }
-}
 
-
+//a and h's
+//------------------------------------------------------------------------------------
 a
 {
     color:$Primary-Text-Color;
@@ -77,8 +77,58 @@ h6{
     font-family: $H-Font;
     text-shadow: 2px 2px #131313;
 }
+//Dropdown
+//------------------------------------------------------------------------------------
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-left:auto;
+    margin-right: 35;
+}
 
+.dropdownbutton {
+    background: none;
+    border-radius: 10px;
+    color: $Primary-Text-Color;
+    padding: 16px;
+    font-size: xx-large;
+    border: none;
+    text-align: center;
+    text-shadow: 2px 2px #131313;
 
+}
+.dropdown:hover .dropdownbutton 
+{
+    transition-duration: $Transition-Speed;
+    color: white;
+    background-color: #1d1d1db9;
+}
+
+.dropdownposts{
+    display: none;
+    position:absolute;
+    background-color: $Secondary-Color;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+}
+.dropdownposts a {
+  color: $Primary-Text-Color;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+.dropdownposts a:hover{
+    color: white;
+}
+.dropdown:hover .dropdownposts {
+    display: block;
+}
+
+//Page
+//------------------------------------------------------------------------------------
 .page{
     font-family: $B-Font;
     font-size: $B-Size;
@@ -96,7 +146,17 @@ h6{
         margin: 0 auto;
     }
 }
-
+//Footer
+//------------------------------------------------------------------------------------
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    background-color: $Secondary-Color;
+   
+}
+//Header
+//------------------------------------------------------------------------------------
 header
 {
     .flexbox
@@ -133,7 +193,7 @@ header
                     text-decoration: none;
                 }
                 a:hover{
-                    transition-duration: 0.3s;
+                    transition-duration: $Transition-Speed;
                     display: block;
                     background-color: #1d1d1db9;
                     text-shadow: 2px 2px #131313;
@@ -149,4 +209,48 @@ header
     hr{
         border: 5px solid #131313;
     }
+}
+//Post
+//------------------------------------------------------------------------------------
+$PostMargin: 10;
+.post{
+    //Defaults
+    font-family: $B-Font;
+    font-size: $B-Size;
+    line-height: 1.5;
+    margin-inline: 50px;
+    color: $Primary-Text-Color;
+    text-shadow: 2px 2px #131313;
+
+    background-color: $Secondary-Color;
+    border-style: solid;
+    border-width: 5;
+    border-radius: 5px;
+    border-color: $Tertiary-Color;
+
+    //H
+    .titleh2{
+        margin-top: auto;
+        margin-left: $PostMargin;
+        padding-top: 10;
+        padding-bottom: 0;
+        justify-content: left;
+        margin-bottom: auto;
+    }
+    //hr
+    hr{
+        border-color: $Primary-Color;
+        border-style: solid;
+        border-width: 2;
+
+    }
+    p{
+        margin-left: $PostMargin;
+    }
+    //Div
+    div{
+        background-color: #353535;
+    }
+
+
 }
