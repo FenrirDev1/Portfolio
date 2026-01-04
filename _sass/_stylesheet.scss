@@ -142,6 +142,7 @@ h6{
     color: #5746b9;
     text-shadow: 2px 2px #131313;
     background-image: linear-gradient(#1b0e30e1, #1b1b1bec);
+    border-radius: 5px;
     justify-items: center;
     p,h1,h2,h3,h4,h5,h6,a{
         color: #5746b9;
@@ -253,6 +254,16 @@ $PostMargin: 40;
     border-width: 5;
     border-radius: 5px;
     border-color: $Tertiary-Color;
+    summary{
+        h1,h2,h3,h4,h5,h6{
+            display:inline-block;
+
+        }
+        font-weight: bold;
+    }
+    summary:hover{
+        color:white;
+    }
     //H
     .titleh2{
         margin-left: 10;
@@ -293,23 +304,59 @@ $PostMargin: 40;
 .content{
     column-count: 2;
     flex:auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
 }
 .textarea{
     justify-items: left;
+    break-inside: avoid;
+    h1,h2,h3,h4,h5,h6{
+        margin-left: auto;
+    }
 }
 .videoarea{
-    justify-items: right;
-    align-items: stretch;
+    display: flexbox;
+    justify-items: center;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+
     iframe{
-        display:flex;
-        justify-self: right;
+        display:block;
+        scale: 1.2;
+        margin-top: 5%;
         margin-right: 10px;
+        background-color: #131313b2;
+        padding: 16px;
     }
+}
+.slowinfo{
+    margin-left: $PostMargin;
+    p{
+        margin-left: auto;
+    }
+
+    pre{
+        background-color: #202020;
+        width: fit-content;
+        padding-right: 10%;
+        
+    }
+    code
+    {
+        all:unset;
+    }
+
 }
 .quickinfo{
     margin-left: $PostMargin;
     justify-content: center;
-    width: 100%;
+    position: relative;
+    width: 80% ;
     
 }
 .infosheet{

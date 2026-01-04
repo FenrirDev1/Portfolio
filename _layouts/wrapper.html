@@ -7,10 +7,13 @@ sass: stylesheet
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>{{site.title}}</title>
         <link rel="stylesheet" href="{{'/assets/css/main.css'}}"/>
+        <script src="/assets/codehighlighter/highlighter.js"></script>
+        <script>hljs.highlightAll();</script>
     </head>
     <body class="wrapper">
         {% include header.html %}
         {{content}}
+        <br><br>
         {% include footer.html %}
     </body>
     

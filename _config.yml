@@ -34,6 +34,7 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
 
+  
 #Allows for future posts to be included in build -> Used so Misc is last
 future: true
 
