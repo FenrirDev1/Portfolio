@@ -2,11 +2,11 @@
     <div class="flexbox">
         <h1>
             <a href={{site.baseurl}}>
-                <img src="/assets/img/Watermark.png" alt="Logo" style="background-color: rgba(0, 0, 0, 0.733);margin: 10; padding: 20px; border-radius: 100px;">
+                <img src="{{'/assets/img/Watermark.png'}}" alt="Logo" style="background-color: rgba(0, 0, 0, 0.733);margin: 10; padding: 20px; border-radius: 100px;">
             </a>
         </h1>
         <h2>
-            <img flex src="/assets/img/Banner.png" alt="Banner.png" >
+            <img flex src="{{'assets/img/Banner.png'}}" alt="Banner.png" >
         </h2>
         <nav class="navlist">
             <ul>
@@ -16,7 +16,7 @@
                 {% for page in site.pages %}
                 {% if page.title %}
                 <li>
-                    <a href="{{page.url}}">{{page.title}}</a>
+                    <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a>
                 </li>
                 {% endif %}
                 {% endfor %}
@@ -27,7 +27,7 @@
             <div class="dropdownposts">
                 {% for page in site.posts reversed %}
                 {% if page.show == true %}
-                <a href="{{page.url}}">{{page.title}}</a>
+                <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a>
                 {% endif  %}
                 {% endfor %}
             </div>
