@@ -1,7 +1,7 @@
 ---
 layout: "page"
 title: "Links"
-permalink: Linkpage
+permalink: /Linkpage
 ---
 
 <a href="https://github.com/FenrirDev1" target="_blank"> 
