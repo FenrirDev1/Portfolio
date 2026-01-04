@@ -30,7 +30,7 @@ permalink: /Linkpage
 
 
 <a href="https://www.linkedin.com/in/fenrirdev/" target="_blank"> 
-    <img class="logoimg" src="assets\img\linkedIN.png" alt="linkedin" width="50"/> 
+    <img class="logoimg" src="assets\img\LinkedIN.png" alt="linkedin" width="50"/> 
 </a>
 
 <h3>
