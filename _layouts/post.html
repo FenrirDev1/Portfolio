@@ -32,9 +32,18 @@ layout: "home"
                     {{content}}
                 </div>
             </div>
+            {% if page.video == true %}
             <div class="videoarea">
                 <iframe width="560" height="315" src="{{pagedata.videolink}}&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+            {% endif %}
+            <br>
+            {% if page.picture == true %}
+            <div class="videoarea">
+                <img width="560" height="315" src="{{pagedata.picturelink}}">
+            </div>
+            {% endif %}
+
         </div>
         <br>
     </div>

@@ -3,6 +3,8 @@ layout: post
 title: Low Level Optimisation
 permalink: /LLO
 yamlName: LLO
+video: true
+picture: false
 show: true
 ---
 

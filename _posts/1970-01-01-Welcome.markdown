@@ -9,13 +9,32 @@ simple: true
 
 ### Welcome to my (FenrirDev's) Portfolio!
 
-To look at my showcased work look through the posts dropdown in the top right.
+
+To look at my showcased work look through the posts dropdown in the top right or below.
 
 To learn more about me have a look through about.
 
 To access links to my Youtube, LinkedIn or Github look into links!
 
 Hope you enjoy your stay :)
+
+### **Warning: This website is not built for mobile or firefox.**
+
+**Posts**
+
+<nav class="navlist">
+    <ul>   
+        {% for page in site.posts reversed %}  
+        {% if page.show == true %}
+        <li class="">
+        <div>
+        <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a>
+        </div>
+        </li>
+        {% endif  %}
+        {% endfor %}
+    </ul>
+ </nav>            
 
 
 <img src="assets/img/Deej.png" alt="deej" width="200">

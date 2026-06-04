@@ -3,15 +3,16 @@ layout: post
 title: Mouse Variable Display
 permalink: /MVD
 yamlName: MVD
+video: true
 show: true
 ---
 
 
 ### Why?
 ---
-The purpose of this tool is to allow designers, programmers etc easier debugging in the unity workspace. I chose to make this particular tool as Unity Debugging in real time can be rather diffuclt. This feature is inspired by the watch window in the visual studio debugger which I use endlessly in my debugging outside unity.
+The purpose of this tool is to allow designers, programmers etc easier debugging in the unity workspace. I chose to make this particular tool as Unity Debugging in real time can be rather difficult. This feature is inspired by the watch window in the visual studio debugger which I use endlessly in my debugging outside unity.
 
-The tool allows any custom MonoBehaviour with serialisable fields to be 'watched' or debugged alongside having the ability to hover over the heirarchy to see the chosen variables. 
+The tool allows any custom MonoBehaviour with serializable fields to be 'watched' or debugged alongside having the ability to hover over the hierarchy to see the chosen variables. 
 
 ### Features
 ---
@@ -30,7 +31,7 @@ I plan on revisiting this project when I get some time and working on it further
 
 **More functionality** - such as a sprite viewer
 
-**Multiple watch windows**, drag out object out of main watch so you can have mutiple easily for example.
+**Multiple watch windows**, drag out object out of main watch so you can have multiple easily for example.
 
 **Watch all Instance of x or y**
 
